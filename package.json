@@ -2,10 +2,12 @@
   "name": "tailwindreact",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://L1quiD09.github.io/React-Project",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
@@ -14,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
